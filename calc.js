@@ -36,6 +36,24 @@ button_equ.innerText = "=";
 const button_div = document.createElement("button");
 button_div.innerText = "/";
 
+const hoverEffect1 = document.createElement("div");
+const hoverEffect2 = document.createElement("div");
+const hoverEffect3 = document.createElement("div");
+const hoverEffect4 = document.createElement("div");
+const hoverEffect5 = document.createElement("div");
+const hoverEffect6 = document.createElement("div");
+const hoverEffect7 = document.createElement("div");
+const hoverEffect8 = document.createElement("div");
+const hoverEffect9 = document.createElement("div");
+const hoverEffect10 = document.createElement("div");
+const hoverEffect11 = document.createElement("div");
+const hoverEffect12 = document.createElement("div");
+const hoverEffect13 = document.createElement("div");
+const hoverEffect14 = document.createElement("div");
+const hoverEffect15 = document.createElement("div");
+const hoverEffect16 = document.createElement("div");
+
+
 // classes
 calc.classList.add("calc");
 screen.classList.add("screen");
