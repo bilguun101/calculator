@@ -35,20 +35,46 @@ const button_equ = document.createElement("button");
 button_equ.innerText = "=";
 const button_div = document.createElement("button");
 button_div.innerText = "/";
-// contents' end
-
 
 // classes
 calc.classList.add("calc");
 screen.classList.add("screen");
 buttons.classList.add("buttons");
-// class' end
 
+// function
+function appendToScreen(value) {
+    screen.innerText += value;
+}
 
-// click
+function action_c() {
+    screen.innerText = "";
+}
 
-// click's end
+function action_equ() {
+    try {
+        screen.innerText = eval(screen.innerText);
+    } catch {
+        screen.innerText = "Error";
+    }
+}
 
+// click events
+button7.onclick = () => appendToScreen("7");
+button8.onclick = () => appendToScreen("8");
+button9.onclick = () => appendToScreen("9");
+button_add.onclick = () => appendToScreen("+");
+button4.onclick = () => appendToScreen("4");
+button5.onclick = () => appendToScreen("5");
+button6.onclick = () => appendToScreen("6");
+button_sub.onclick = () => appendToScreen("-");
+button1.onclick = () => appendToScreen("1");
+button2.onclick = () => appendToScreen("2");
+button3.onclick = () => appendToScreen("3");
+button_mul.onclick = () => appendToScreen("*");
+button_c.onclick = action_c;
+button0.onclick = () => appendToScreen("0");
+button_equ.onclick = action_equ;
+button_div.onclick = () => appendToScreen("/");
 
 // placement
 calc.appendChild(screen);
@@ -70,5 +96,5 @@ buttons.appendChild(button_c);
 buttons.appendChild(button0);
 buttons.appendChild(button_equ);
 buttons.appendChild(button_div);
+
 document.body.appendChild(calc);
-// placement's end
