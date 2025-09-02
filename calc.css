@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffecc9;
+    background-color: #c2994b;
 }
 
 .calc {
@@ -72,4 +72,16 @@ body {
 
 .color3 {
     background-color: white;
+}
+
+
+
+
+.doge {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    width: 1000px;
+    margin-left: 1350px;
+    margin-top: 200px;
 }
