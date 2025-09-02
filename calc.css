@@ -34,6 +34,10 @@ body {
     justify-content: end;
     align-items: center;
     font-size: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right: 10px;
 }
 
 .buttons {
@@ -49,7 +53,6 @@ body {
 }
 
 .buttons button {
-    background-color: white;
     width: 70px;
     height: 70px;
     border-radius: 15px;
@@ -57,4 +60,16 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
+}
+
+.color1 {
+    background-color: rgb(255, 199, 95);
+}
+
+.color2 {
+    background-color: rgb(255, 68, 68);
+}
+
+.color3 {
+    background-color: white;
 }

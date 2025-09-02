@@ -41,6 +41,25 @@ calc.classList.add("calc");
 screen.classList.add("screen");
 buttons.classList.add("buttons");
 
+button_add.classList.add("color1");
+button_sub.classList.add("color1");
+button_mul.classList.add("color1");
+button_div.classList.add("color1");
+button_equ.classList.add("color1");
+
+button_c.classList.add("color2");
+
+button0.classList.add("color3");
+button1.classList.add("color3");
+button2.classList.add("color3");
+button3.classList.add("color3");
+button4.classList.add("color3");
+button5.classList.add("color3");
+button6.classList.add("color3");
+button7.classList.add("color3");
+button8.classList.add("color3");
+button9.classList.add("color3");
+
 // function
 function appendToScreen(value) {
     screen.innerText += value;
